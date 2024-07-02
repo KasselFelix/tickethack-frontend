@@ -5,23 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TICKETHACK</title>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div id="main-container">
       <div id="header">
         <div id="tickethack-logo">
-          <h1>Tickethack</h1>
+          <h1><a href="index.html" id="cart-link">Tickethack</a></h1>
         </div>
 
         <div id="cart">
-          Cart
-          <a href="cart.html" id="cart-link"></a>
+          <a href="cart.html" id="cart-link">Cart</a>
         </div>
 
         <div id="bookings">
-          Bookings
-          <a href="bookings.html" id="bookings-link"></a>
+          <a href="bookings.html" id="bookings-link">Bookings</a>
         </div>
       </div>
 
@@ -34,7 +31,21 @@
             </p>
           </div>
           <div id="cart-list">
-            <div id="delete-btn">X</div>
+            <div class="tickets-found">
+              <div class="travel-data"><span class="depart">depart</span> > <span class="arrival">arrival</span></div>
+              <div class="travel-time">date</div>
+              <div class="travel-price"><span>price</span>$</div>
+              <button type="button" class="book-btn">Book</button>
+              <button type="button" class="delete-btn">X</button>
+            </div>
+
+            <div class="tickets-found">
+              <div class="travel-data"><span class="depart">depart</span> > <span class="arrival">arrival</span></div>
+              <div class="travel-time">date</div>
+              <div class="travel-price"><span>price</span>$</div>
+              <button type="button" class="book-btn">Book</button>
+              <button type="button" class="delete-btn">X</button>
+            </div>
           </div>
           <div id="total-cart">
             <div id="total-price">Total:</div>
@@ -43,6 +54,6 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
