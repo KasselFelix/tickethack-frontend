@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TICKETHACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
@@ -29,11 +32,11 @@
 
       <div id="content">
         <div id="catch-phrase">
-          <h2>Explore the world effortlessly by train!</h2>
-          <h3>
+          <h3>Explore the world effortlessly by train!</h3>
+          <p>
             Compare, book and enjoy cheap prices for tain tickets: your journey
             starts on Tickethack
-          </h3>
+          </p>
         </div>
         <div id="content-container">
           <div id="search-container">
@@ -44,26 +47,30 @@
           </div>
 
           <div id="result-container">
-            <div id="default-result">
-              <div id="train-logo"></div>
-              <p>It's time to book your future trip</p>
-            </div>
+                <div id="result" class="default-result">
+                    <div id="train-logo">
+                        <img src="../tickethack-frontend/images/train.png" alt="Train logo" />
+                        <hr />
+                    </div>
+                    <p>It's time to book your future trip</p>
+                </div>
 
-            <div id="no-result">
-              <div id="magnifying-glass-logo"></div>
-              <p>No trip found.</p>
-            </div>
+                <div class="no-result">
+                    <div id="magnifying-glass-logo"></div>
+                    <p>No trip found.</p>
+                </div>
 
-            <div id="tickets-found">
-              <div class="tickets-data">
-                <div class="travel-data"></div>
-                <div class="travel-time"></div>
-                <div class="travel-price"></div>
-                <button class="book-btn" >Book</button>
-              </div>
-            </div>
+                <div class="tickets-found">
+                    <div class="tickets-data">
+                        <div class="travel-data"></div>
+                        <div class="travel-time"></div>
+                        <div class="travel-price"></div>
+                        <button class="book-btn" >Book</button>
+                    </div>
+                </div>
           </div>
         </div>
+
       </div>
     </div>
     <script src="script.js"></script>
