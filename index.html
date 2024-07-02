@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TICKETHACK</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-        <h1>TICKETHACK</h1>
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICKETHACK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="header">
+        <div id="tickethack-logo">
+          <h1>Tickethack</h1>
+        </div>
+
+        <div id="cart">
+          Cart
+          <a href="cart.html" id="cart-link"></a>
+        </div>
+
+        <div id="bookings">
+          Bookings
+          <a href="bookings.html" id="bookings-link"></a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="catch-phrase">
+          <h2>Explore the world effortlessly by train!</h2>
+          <h3>
+            Compare, book and enjoy cheap prices for tain tickets: your journey
+            starts on Tickethack
+          </h3>
+        </div>
+
+        <div id="search-container">
+          Search
+          <div id="depart">Departure</div>
+          <div id="arrival">Arrival</div>
+          <div id="date"></div>
+          <div id="search-btn">Search</div>
+        </div>
+
+        <div id="result-container">
+          <div id="default-result">
+            <div id="train-logo"></div>
+            <p>It's time to book your future trip</p>
+          </div>
+
+          <div id="no-result">
+            <div id="magnifying-glass-logo"></div>
+            <p>No trip found.</p>
+          </div>
+
+          <div id="tickets-found">
+            <div id="tickets-data">
+              <div id="travel-data"></div>
+              <div id="travel-time"></div>
+              <div id="travel-price"></div>
+              <div id="book-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
