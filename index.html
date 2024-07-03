@@ -14,63 +14,63 @@
   <body>
     <div id="main-container">
       <div id="header">
-        <div id="tickethack-logo">
-          <h1>Tickethack</h1>
-        </div>
-
-        <div id="pages-links">
-            <div id="cart">
-              <a href="cart.html" id="cart-link">Cart</a>
+            <div id="tickethack-logo">
+                <h1>Tickethack</h1>
             </div>
+
+            <div id="pages-links">
+                <div id="cart">
+                    <a href="cart.html" id="cart-link">Cart</a>
+                </div>
     
-            <div id="bookings">
-              <a href="bookings.html" id="bookings-link">Bookings</a>
+                <div id="bookings">
+                    <a href="bookings.html" id="bookings-link">Bookings</a>
+                </div>
             </div>
         </div>
-      </div>
 
-      <div id="content">
-        <div id="catch-phrase">
-          <h3>Explore the world effortlessly by train!</h3>
-          <p>
-            Compare, book and enjoy cheap prices for tain tickets: your journey
-            starts on Tickethack
-          </p>
-        </div>
-        <div id="content-container">
-          <div id="search-container">
-            <input type="text" id="depart" placeholder="Departure" />
-            <input type="text" id="arrival" placeholder="Arrival"/>
-            <input type="date" id="date"></input>
-            <button type="button" id="search-btn">Search</button>
-          </div>
+        <div id="content">
+            <div id="catch-phrase">
+                <h3>Explore the world effortlessly by train!</h3>
+                <p>Compare, book and enjoy cheap prices for tain tickets: your journey starts on Tickethack.</p>
+            </div>
 
-          <div id="result-container">
-                <div id="result" class="default-result">
-                    <div id="train-logo">
-                        <img src="../tickethack-frontend/images/train.png" alt="Train logo" />
-                        <hr />
+            <div id="content-container">
+                <div id="search-container">
+                    <input type="text" id="depart" placeholder="Departure" />
+                    <input type="text" id="arrival" placeholder="Arrival"/>
+                    <input type="date" id="date"></input>
+                    <button type="button" id="search-btn">Search</button>
+                </div>
+
+                <div id="result-container">
+                    <div id="result" class="default-result">
+                        <div id="train-logo">
+                            <img src="../tickethack-frontend/images/train.png" alt="Train logo" />
+                            <hr />
+                        </div>
+                        <p>It's time to book your future trip</p>
                     </div>
-                    <p>It's time to book your future trip</p>
-                </div>
 
-                <!-- <div id="result" class="no-result">
-                    <div id="magnifying-glass-logo"></div>
-                    <p>No trip found.</p>
-                </div> -->
+                    <div id="result" class="no-result">
+                        <div id="magnifying-glass-logo">
+                            <img src="../tickethack-frontend/images/notfound.png" alt="Not found logo" />
+                            <hr />
+                        </div>
+                        <p>No trip found.</p>
+                    </div>
 
-              <!-- <div id="result" class="tickets-found">
-                <div class="tickets-data">
-                  <div class="travel-data"></div>
-                  <div class="travel-time"></div>
-                  <div class="travel-price"></div>
-                  <button type="button" class="book-btn" >Book</button>
+                    <div id="result" class="tickets-found">
+                        <div class="tickets-data"></div>
+                        <div class="travel-data"></div>
+                        <div class="travel-time"></div>
+                        <div class="travel-price"></div>
+                        <button type="button" class="book-btn" >Book</button>
+                    </div>
                 </div>
-              </div> -->
-          </div>
+            </div>
         </div>
 
-      </div>
     </div>
     <script src="script.js"></script>
   </body>

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TICKETHACK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
     <div id="main-container">
@@ -23,34 +30,33 @@
       </div>
 
       <div id="content">
-        <div id="my-cart">
-          <div id="default-cart">
-            <p>
-              No tickets in your cart.<br />
-              Why not plan a trip?
-            </p>
-          </div>
-          <div id="cart-list">
-            <div class="tickets-found">
-              <div class="travel-data"><span class="depart">depart</span> > <span class="arrival">arrival</span></div>
-              <div class="travel-time">date</div>
-              <div class="travel-price"><span>price</span>$</div>
-              <button type="button" class="book-btn">Book</button>
-              <button type="button" class="delete-btn">X</button>
+        <div id="content-container">
+          <!-- <div id="my-cart"> -->
+            <!-- <div id="default-cart">
+              <p id="first">
+                No tickets in your cart.
+              </p>
+              <p id="second">
+                Why not plan a trip?
+              </p>
+              
+            </div> -->
+            <div id="cart-list">
+              <h3>My cart</h3>
+              <div class="tickets-data">
+                <div class="travel-data"></div>
+                <div class="travel-time"></div>
+                <div class="travel-price"></div>
+                <button type="button" id="delete-btn">X</button>
+              </div>
             </div>
-
-            <div class="tickets-found">
-              <div class="travel-data"><span class="depart">depart</span> > <span class="arrival">arrival</span></div>
-              <div class="travel-time">date</div>
-              <div class="travel-price"><span>price</span>$</div>
-              <button type="button" class="book-btn">Book</button>
-              <button type="button" class="delete-btn">X</button>
+            <div id="total-cart">
+              <div id="total-price">
+                <h3>Total:</h3>
+                <button type="button" id="purchase-btn">Purchase</button>
+              </div>
             </div>
-          </div>
-          <div id="total-cart">
-            <div id="total-price">Total:</div>
-            <div id="purchase-btn">Purchase</div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
