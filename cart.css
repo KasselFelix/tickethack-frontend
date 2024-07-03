@@ -111,6 +111,19 @@ a {
   font-stretch: extra-expanded;
 }
 
+.tickets-booked{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  background-color: rgb(222, 214, 214);
+  border-radius: 10px;
+  margin: 1vw;
+  padding-top: 1vh;
+}
+
+
 #first {
   margin-bottom: 20px;
 }
