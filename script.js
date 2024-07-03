@@ -47,7 +47,7 @@ document.querySelector("#search-btn").addEventListener("click", function () {
                         }</span>€</div>
                         <button type="button" id="${
                             data.trips[i]._id
-                        }" class="book-btn"><a href="cart.html" >Book</a></button>
+                        }" class="book-btn"><a href="cart.html">Book</a></button>
                     </div>
                     `;
                 }

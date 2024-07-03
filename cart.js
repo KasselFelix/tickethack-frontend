@@ -32,14 +32,14 @@ fetch("http://localhost:3000/cart")
             document.querySelector("#my-cart").innerHTML += `
                 <div id="total-cart">
                     <p id="entete">My Cart</p>
-                    <div id="cart-list">
-                    </div>
+                    <div id="cart-list"></div>
                     <div id="total-price">
                         <h3 style="color:white">Total: <span id="som" style="color:white"></span>€</h3>
                         <button type="button" id="purchase-btn">Purchase</button>
                     </div>
                 </div>
                 `;
+            let som = 0;
             for (let i = 0; i < data.trips.length; i++) {
                 console.log('affiche')
                 document.querySelector("#cart-list").innerHTML += `   
@@ -50,8 +50,10 @@ fetch("http://localhost:3000/cart")
                         <button type="button" id="${data.trips[i]._id}" class="delete-btn">X</button>
                     </div>
                    `;
+                   som+=data.trips[i].price;
             }
-            // callDelete();
+            document.querySelector("#som").innerHTML +=`${som}`; 
+            callDelete();
         }
     });
 
@@ -59,6 +61,7 @@ document.querySelector("#purchase-btn").addEventListener("click", function () {
     fetch(`http://localhost:3000/purchase`)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             if (data.result) {
                 let sum = 0;
                 for (let i = 0; i < data.length; i++) {
