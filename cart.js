@@ -28,16 +28,28 @@ fetch("http://localhost:3000/cart")
     .then((data) => {
         if (data.trips) {
             console.log(data);
+            document.querySelector("#default-cart").remove();
+            document.querySelector("#my-cart").innerHTML += `
+                <div id="total-cart">
+                    <p id="entete">My Cart</p>
+                    <div id="cart-list">
+                    </div>
+                    <div id="total-price">
+                        <h3 style="color:white">Total: <span id="som" style="color:white"></span>€</h3>
+                        <button type="button" id="purchase-btn">Purchase</button>
+                    </div>
+                </div>
+                `;
             for (let i = 0; i < data.trips.length; i++) {
                 console.log('affiche')
-                document.querySelector("#default-cart").remove();
-                document.querySelector("#my-cart").innerHTML += `
+                document.querySelector("#cart-list").innerHTML += `   
                     <div id="tickets-booked">
                         <div class="travel-data"><span class="depart">${data.trips[i].departure}</span> > <span class="arrival">${data.trips[i].arrival}</span></div>
                         <div class="travel-time"><span class="hidden-date">${data.trips[i].date}</span>${moment(data.trips[i].date).format("hh:mm")}</div>
                         <div class="travel-price"><span>${data.trips[i].price}</span>€</div>
                         <button type="button" id="${data.trips[i]._id}" class="delete-btn">X</button>
-                    </div>`;
+                    </div>
+                   `;
             }
             // callDelete();
         }

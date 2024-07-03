@@ -98,8 +98,8 @@ a {
 
 #my-cart{
   background-color: white;
-  height: 60%;
-  width: 60%;
+  height: 100%;
+  width: 100%;
 }
 
 #cart-list{
@@ -130,8 +130,8 @@ a {
 }
 
 #tickets-booked{
-  height: 110%;
-  width: 130%;
+  height: 18%;
+  width: 80%;
   background-color: rgb(222, 214, 214);
   display:flex;
   flex-direction: row;
@@ -151,28 +151,39 @@ a {
   /* margin-bottom: 5px; */
 }
 
+.hidden-date {
+  visibility: hidden;
+  display: none;
+}
+
+#entete{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 #first {
   margin-bottom: 20px;
 }
 
 #total-cart {
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:flex-end;
 }
 
 #total-price{
   background-color: blue;
-  width: 167%;
+  width: 100%;
   padding-bottom:16px;
   padding-top: 16px;
   display: flex;
   flex-direction:row;
   align-items:center;
   justify-content:space-around;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   border-radius: 5px;
 }
 
