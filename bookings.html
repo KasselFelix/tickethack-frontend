@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="bookings.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TICKETHACK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  </head>
-  <body>
-    <div id="main-container">
-      <div id="header">
-        <div id="tickethack-logo">
-          <h1>Tickethack</h1>
-        </div>
+    <head>
+        <link rel="stylesheet" href="bookings.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TICKETHACK</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="header">
+                <div id="tickethack-logo">
+                    <h1>Tickethack</h1>
+                </div>
 
-        <div id="bookings">
-          Bookings
-          <a href="bookings.html" id="bookings-link"></a>
-        </div>
+                <div id="bookings">
+                    Bookings
+                    <a href="bookings.html" id="bookings-link"></a>
+                </div>
 
-        <div id="cart">
-          Cart
-          <a href="cart.html" id="cart-link"></a>
-        </div>
-      </div>
+                <div id="cart">
+                    Cart
+                    <a href="cart.html" id="cart-link"></a>
+                </div>
+            </div>
 
-      <div id="content">
-        <div id="my-bookings">
-          <div id="default-booking">
-            <p>
-              No booking yet.<br />
-              Why not plan a trip?
-            </p>
-          </div>
-          <div id="booking-list">
-            <div id="departure-timer">Departure in</div>
-          </div>
-          <div id="thanks">
-            <p>Enjoy your travels with Tickethack</p>
-          </div>
+            <div id="content">
+                <div id="my-bookings">
+                    <div id="default-booking">
+                        <p>
+                            No booking yet.<br />
+                            Why not plan a trip?
+                        </p>
+                    </div>
+                    <div id="thanks">
+                        <p>Enjoy your travels with Tickethack</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <script src="bookings.js"></script>
+    </body>
 </html>
