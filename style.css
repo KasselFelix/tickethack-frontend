@@ -58,6 +58,11 @@ a {
   font-style: normal;
 }
 
+.hidden-date {
+  visibility: hidden;
+  display: none;
+}
+
 #bookings {
   padding: 15px;
   color: black;
