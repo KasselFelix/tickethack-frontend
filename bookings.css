@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-#main-container {
+/* #main-container {
   display: grid;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(9, 1fr);
@@ -52,4 +52,201 @@
   font-size: 12px;
   font-weight: bolder;
   font-style: normal;
+} */
+
+#main-container {
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  color:green;
+}
+
+#header {
+  height: 10vh;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tickethack-logo {
+  color: rgb(9, 162, 131);
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: extra-expanded;
+}
+
+#pages-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#cart {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+#bookings {
+  padding: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+#content {
+  background-color: rgba(216, 218, 208, 0.795);
+  grid-row-start: 2;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+}
+
+#content-container {
+  /* background-color: white */
+  background-color: white;
+  grid-row-start: 5;
+  grid-row-end: 13;
+  grid-column-start: 3;
+  grid-column-end: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#my-cart{
+  background-color: white;
+  height: 60%;
+  width: 60%;
+}
+
+#cart-list{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  
+}
+
+#default-cart {
+  background-color: white;
+  border-radius: 5%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: normal;
+  font-stretch: extra-expanded;
+}
+
+#tickets-booked{
+  height: 110%;
+  width: 130%;
+  background-color: rgb(222, 214, 214);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  background-color: rgb(222, 214, 214);
+  border-radius: 5px;
+  margin: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 5px;
+}
+
+.travel-data{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 5px; */
+}
+
+
+#first {
+  margin-bottom: 20px;
+}
+
+#total-cart {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#total-price{
+  background-color: blue;
+  width: 167%;
+  padding-bottom:16px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: normal;
+  font-stretch: extra-expanded;
+}
+
+.delete-btn{
+  background-color: rgb(9, 162, 131);
+  border-radius: 5px;
+  border:none;
+  width: 30px;
+  height: 30px;
+  color:white;
+}
+
+#purchase-btn{
+  background-color: rgb(9, 162, 131);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 80px;
+  height: 30px;
 }
